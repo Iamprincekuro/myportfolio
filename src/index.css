@@ -54,7 +54,7 @@ body {
 
 /*=================GENERAL STYLES=====================*/
 
-/* General class container */
+/* General class container (div) */
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
