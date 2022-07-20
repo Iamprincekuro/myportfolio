@@ -1,4 +1,8 @@
+/* Importing google fonts after selecting the preferred font styles*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
+  /* Giving the default setting styles  */
   border: 0;
   padding: 0;
   margin: 0;
@@ -9,10 +13,36 @@
 }
 
 :root {
+  /* Declaring variables to hold the
+    different color properties of the website*/
+
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
+
+  /* Giving the different sizes, large-lg,
+  medium-md and small-sm respectively to our <div> containers*/
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+/* Giving Html a scroll behaviour */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* using the previously declared variables */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
 }
